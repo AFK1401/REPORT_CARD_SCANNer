@@ -10,6 +10,8 @@ A Python desktop application that digitizes physical report cards using a live c
 * **Simple GUI** — Built with Tkinter: connect to the camera, capture or browse an image, preview extracted text, and export.
 * **Excel Export** — Appends each extraction as a new row to a `.xlsx` file via openpyxl, creating the file with headers if it doesn't exist yet.
 
+![App UI](docs\UI_img.png)
+
 ## Technologies Used
 * **Language:** Python
 * **Computer Vision:** OpenCV (`cv2`)
@@ -67,6 +69,15 @@ python app.py
 5. Use **Open Excel File** or **Browse Folder** to jump straight to your saved output.
 
 Captured images and exported spreadsheets are saved under `~/OneDrive/Desktop/<folder name>` (defaults to `DroidCamFrames` if left blank).
+
+## Example Extraction
+Multiple test rows extracted and exported successfully under good lighting and legible handwriting:
+
+![Extraction results](docs/exp.png)
+
+Accuracy drops when handwriting includes corrections or overlapping strokes — in one case a corrected mark was read as `032+`:
+
+![Handwriting sample](docs/img_1.png) ![Extraction results](docs/IMG_2.png)
 
 ## Known Limitations
 * **Windows-oriented file paths.** Output folders are written under `~/OneDrive/Desktop`, which assumes a Windows machine with OneDrive. On macOS/Linux this will create an `OneDrive/Desktop` path that may not otherwise exist.
