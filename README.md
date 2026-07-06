@@ -86,12 +86,13 @@ Accuracy drops when handwriting includes corrections or overlapping strokes — 
 * **No corner-case handling in export.** Field values containing a colon (`:`) could break the text-box-to-Excel parsing.
 
 ## Project Structure
-```
+```text
 .
-├── app.py          # Main application: GUI, camera feed, OCR extraction, Excel export
-├── README.md
-└── .gitignore
-```
+├── docs/           # Documentation assets and sample extraction images
+├── .gitignore      # Ignored files and sensitive credentials
+├── LICENSE         # Project license terms
+├── README.md       # Project documentation and setup instructions
+└── app.py          # Main application: GUI, camera feed, OCR extraction, Excel export
 
 ## Contributing
 Contributions are welcome. Please do not commit credential files (`*.json`, `.env`, `*.key`, `*.pem`) — these are already excluded via `.gitignore`.
