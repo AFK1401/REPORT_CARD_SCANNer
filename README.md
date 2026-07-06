@@ -10,7 +10,7 @@ A Python desktop application that digitizes physical report cards using a live c
 * **Simple GUI** — Built with Tkinter: connect to the camera, capture or browse an image, preview extracted text, and export.
 * **Excel Export** — Appends each extraction as a new row to a `.xlsx` file via openpyxl, creating the file with headers if it doesn't exist yet.
 
-![App UI](docs\UI_img.png)
+![App UI](docs/UI_img.png)
 
 ## Technologies Used
 * **Language:** Python
