@@ -8,11 +8,22 @@
 # 2. ENVIRONMENT FILES
 venv/
 env/
-.env/
 __pycache__/
 
-# 3. OS AND IDE JUNK
+# 3. OS AND IDE AND PYTHON JUNK
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+*.pyc
+*.log
+build/
+dist/
+*.egg-info/
+
+# 4. GENERATED DATA / OUTPUT
+   DroidCamFrames/
+   *.xlsx
+   *.jpg
+   *.jpeg
+   *.png
