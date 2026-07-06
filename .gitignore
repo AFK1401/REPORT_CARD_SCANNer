@@ -1,0 +1,18 @@
+# 1. SECRET KEYS AND CREDENTIALS
+*.json
+*.key
+*.pem
+.env
+*.secret
+
+# 2. ENVIRONMENT FILES
+venv/
+env/
+.env/
+__pycache__/
+
+# 3. OS AND IDE JUNK
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
